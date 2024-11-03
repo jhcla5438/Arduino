@@ -29,11 +29,10 @@
 #include <U8g2lib.h>
 
 /* 设置oled屏幕的相关信息 */
-//const int I2C_ADDR = 0x3c;  // oled屏幕的I2c地址
 #define SDA_PIN 4           // SDA引脚，默认gpio4(D2)
 #define SCL_PIN 5           // SCL引脚，默认gpio5(D1)
 
-/* 新建一个oled屏幕对象，需要输入IIC地址，SDA和SCL引脚号 */
+/* 新建一个oled屏幕对象，输入SDA和SCL引脚号 */
 U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/U8X8_PIN_NONE, /* clock=*/5, /* data=*/4);  // ESP32 Thing, HW I2C with pin remapping
 
 // 模拟引脚A0
